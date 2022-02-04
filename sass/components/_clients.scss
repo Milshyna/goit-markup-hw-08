@@ -15,7 +15,6 @@
 .client-icon-link {
   @extend %sample;
   justify-content: center;
-  @extend %aligh;
   @include size(170px, 92px);
   background-color: var(--header-background);
   border: 1px solid #afb1b8;
