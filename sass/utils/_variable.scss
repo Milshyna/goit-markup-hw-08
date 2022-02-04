@@ -41,11 +41,17 @@ body {
   }
 }
 .container {
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
+  @media screen and(min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+  }
+  outline: 2px solid red;
 }
 
 .visually-hidden {
