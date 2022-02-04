@@ -1,0 +1,36 @@
+/* ----------------Header------------------ */
+.header-contact__link {
+  margin-left: 93px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  & .link:hover,
+  & .link:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.header-contact__item {
+  position: relative;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.header-contact__link,
+.flex-header__nav,
+.navigation,
+.flex-contact {
+  @extend %sample;
+}
+.flex-header {
+  border-bottom: 1px solid #ececec;
+}
+.flex-header__nav,
+.navigation {
+  @extend %align;
+}

@@ -1,0 +1,10 @@
+%sample {
+  display: flex;
+}
+%align {
+  align-items: center;
+}
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}

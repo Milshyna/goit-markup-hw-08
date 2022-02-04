@@ -1,0 +1,54 @@
+.link.flex-contact__tel,
+.link.flex-contact__mail {
+  @extend %sample;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  @extend %align;
+  color: var(--second-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+.flex-contact {
+  margin-left: auto;
+}
+.flex-contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.tel-icon {
+  @include size(10px, 16px);
+}
+
+.contact-icon {
+  @include size(16px, 12px);
+}
+.flex-contact__item {
+  @extend %sample;
+  @extend %align;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.flex-contact__footer {
+  @extend %sample;
+  flex-direction: column;
+}
+.flex-contact__footer {
+  margin: 0;
+}
+
+.footer-tel {
+  margin-top: 11px;
+}
+.footer-tel,
+.footer-mail {
+  color: var(--footer-text-tel-color);
+  font-style: normal;
+}

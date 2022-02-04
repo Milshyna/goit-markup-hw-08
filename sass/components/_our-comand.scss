@@ -1,0 +1,50 @@
+/* ----------------Команда------------------------------------ */
+.comand {
+  background: var(--second-background);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.author {
+  @extend %sample;
+}
+.author__item {
+  flex-direction: column;
+  min-width: 270px;
+  min-height: 368px;
+  background-color: var(--header-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.img-author {
+  display: block;
+  @include size(270px, 260px);
+}
+.author-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.author-text__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+
+  margin-bottom: 10px;
+}
+.profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}

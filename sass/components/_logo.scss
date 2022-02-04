@@ -1,0 +1,17 @@
+.logotype {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+  & .logotype__accent {
+    color: var(--accent-text-color);
+  }
+}
+
+.logotype__footer {
+  color: var(--white-text-color);
+  margin-bottom: 22px;
+}

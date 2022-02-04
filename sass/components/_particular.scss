@@ -1,0 +1,42 @@
+.flex-propet {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.propet {
+  @extend %sample;
+}
+.propet__item:not(:last-child) {
+  margin-right: 30px;
+}
+.propet__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-text-color);
+}
+.propet-text {
+  display: inline-block;
+  min-width: 270px;
+  min-height: 75px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.propet__icon {
+  @extend %sample;
+  @include size(270px, 120px);
+  background: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
+  @extend %align;
+  margin-bottom: 30px;
+}
+.propet-icon-item {
+  display: block;
+  @include size(70px, 70px);
+}
