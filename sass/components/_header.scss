@@ -22,8 +22,8 @@
   @include tab {
     display: flex;
     position: relative;
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-bottom: 37px;
+    padding-top: 36px;
     &:not(:last-child) {
       margin-right: 50px;
     }
@@ -40,8 +40,17 @@
 
 .flex-header {
   border-bottom: 1px solid #ececec;
+  @include tel {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @include tab {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .flex-header__nav,
 .navigation {
-  @extend %align;
+  display: flex;
+  align-items: center;
 }

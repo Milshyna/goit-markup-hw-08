@@ -40,6 +40,11 @@
               <a href="" class="link">Контакты</a>
             </li>
           </ul>
+           <button type="button" class="mob-menu mob-menu__open" data-mobile-open>
+          <svg class="mob-menu__icon" width="40" height="40">
+            <use href="./image/iconmoon.svg#icon-menu_40px"/>
+          </svg>
+        </button>
         </nav>
         <ul class="list flex-contact">
           <li class="flex-contact__item">
@@ -60,8 +65,51 @@
             >
           </li>
         </ul>
-      </div>
+        <!--Mobile-modal-->
+      <div class="mobile is-hidden" data-mobile>
+        <div class="mobile-menu">
+           <button type="button" class="mobile-menu__close" data-mobile-close>
+             <svg class="btn-icon-mobile"><use href="./image/iconmoon.svg#icon-crest"></use></svg>
+           </button>
+            <ul class="mobile-contact mobile-contact__link list">
+            <li class="mobile-contact__item">
+              <a href="" class="link ">Студия</a>
+            </li>
+            <li class="mobile-contact__item">
+              <a href="./portfolio.html" class="link">Портофолио</a>
+            </li>
+            <li class="mobile-contact__item">
+              <a href="" class="link">Контакты</a>
+            </li>
+          </ul>
+          </nav>
+        <ul class="list mob-contact">
+          <li class="mob-contact__item">
+            <a href="tel:+380961111111" class="link mob-contact__tel">
+              +38 096 111 11 11</a
+            >
+          </li>
 
+          <li class="mob-contact__item">
+            <a href="mailto:info@devstudio.com" class="link mob-contact__mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class=" list mob-social">
+          <li class="mob-social__item link">Instagram</li>
+          <li class="mob-social__item link">Twitter</li>
+          <li class="mob-social__item link">Facebook</li>
+          <li class="mob-social__item link">LinkedIn</li>
+        
+
+        </ul>
+        </div>   
+
+        </div>
+      </div> 
+    
+      
     </header>
     <main>
       <!--Герой-->
@@ -538,5 +586,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>

@@ -1,21 +1,49 @@
 .link.flex-contact__tel,
 .link.flex-contact__mail {
-  @extend %sample;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  @extend %align;
-  color: var(--second-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--accent-text-color);
+  display: none;
+  @include tab {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: (14 / 12);
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
+  @include desk {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: none;
+    align-items: center;
   }
 }
+.link.flex-contact__tel {
+  @include tab {
+    margin-bottom: 10px;
+  }
+  @include desk {
+    margin-bottom: 0;
+  }
+}
+
 .flex-contact {
   display: none;
-  margin-left: auto;
+  @include tab {
+    display: block;
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @include desk {
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 .flex-contact__icon {
   margin-right: 10px;
@@ -29,12 +57,13 @@
   @include size(16px, 12px);
 }
 .flex-contact__item {
-  @extend %sample;
-  @extend %align;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  @include desk {
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .flex-contact__footer {
