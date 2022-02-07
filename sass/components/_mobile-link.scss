@@ -3,6 +3,7 @@
   position: absolute;
   right: 10px;
   top: 15px;
+  transform: translate(-50%, -10%);
   width: 40px;
   height: 40px;
   background: #ffffff;
@@ -111,14 +112,16 @@
   display: flex;
   margin-top: 64px;
 }
+
 .mob-social__item {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-  &:not(:last-child) {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.mob-social__list:not(:last-child) {
+  margin-right: 10px;
 }
