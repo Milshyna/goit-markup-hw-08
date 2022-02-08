@@ -19,7 +19,7 @@ button {
   cursor: pointer;
 }
 
-.mobile-menu__close, .flex-contact__footer, .picture-work, .icon-list, .icon-list__link, .block-icon, .client-icon-link, .footer__sectioun, .footer__form, .btn-modal, .form-modal, .btm-form-modal {
+.mobile-menu__close, .flex-contact__footer, .picture-work, .icon-list, .icon-list__link, .block-icon, .footer__sectioun, .footer__form, .btn-modal, .form-modal, .btm-form-modal {
   display: flex;
 }
 
@@ -75,10 +75,16 @@ body {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-widht: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -978,6 +984,7 @@ body {
 }
 
 .client-icon-link {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 210px;
