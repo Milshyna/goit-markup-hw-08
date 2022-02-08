@@ -1,15 +1,40 @@
 /* ---------------Кнопки Портфолио------------------------- */
 
 .flex-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .second-btn {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @include tab {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
-.flex-second-btn:not(:last-child) {
+.flex-second-btn {
   margin-right: 8px;
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+}
+.flex-second-btn:nth-child(-n + 3) {
+  margin-bottom: 15px;
+  @include tab {
+    margin-bottom: 0;
+  }
+}
+@media screen and(min-width: 768px) {
+  .flex-second-btn:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 .second-btn-item {
   min-width: 73px;

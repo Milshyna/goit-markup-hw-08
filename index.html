@@ -40,11 +40,7 @@
               <a href="" class="link">Контакты</a>
             </li>
           </ul>
-           <button type="button" class="mob-menu mob-menu__open" data-mobile-open>
-          <svg class="mob-menu__icon" width="40" height="40">
-            <use href="./image/iconmoon.svg#icon-menu_40px"/>
-          </svg>
-        </button>
+           
         </nav>
         <ul class="list flex-contact">
           <li class="flex-contact__item">
@@ -65,6 +61,11 @@
             >
           </li>
         </ul>
+        <button type="button" class="mob-menu mob-menu__open" data-mobile-open>
+          <svg class="mob-menu__icon" width="40" height="40">
+            <use href="./image/iconmoon.svg#icon-menu_40px"/>
+          </svg>
+        </button>
         <!--Mobile-modal-->
       <div class="mobile is-hidden" data-mobile>
         <div class="mobile-menu">
@@ -188,7 +189,8 @@
           <ul class="picture-work list">
             <li class="picture-work__item">
               <div class="img-position">
-                <img src="./image/img11.jpg" alt="верстка" width="370" />
+                <img srcset="./image/img11.jpg 1x, ./image/img11-2x.jpg 2x"
+                src="./image/img11.jpg" alt="верстка" width="370" />
                 <div class="work-position">
                   <p class="text-work-item">Десктопные приложения</p>
                 </div>
@@ -196,7 +198,7 @@
             </li>
             <li class="picture-work__item">
               <div class="img-position">
-                <img
+                <img srcset="./image/img22.jpg 1x, ./image/img22-2x.jpg 2x"
                   src="./image/img22.jpg"
                   alt="мобильное приложение"
                   width="370"
@@ -208,7 +210,8 @@
             </li>
             <li class="picture-work__item">
               <div class="img-position">
-                <img src="./image/img33.jpg" alt="дизайн" width="370" />
+                <img srcset="./image/img33.jpg 1x, ./image/img33-2x.jpg 2x"
+                src="./image/img33.jpg" alt="дизайн" width="370" />
                 <div class="work-position">
                   <p class="text-work-item">Дизайнерские решения</p>
                 </div>
@@ -223,12 +226,23 @@
           <h2 class="section-title title__block">Наша команда</h2>
           <ul class="list author">
             <li class="author__item">
+              <picture>
+               <source srcset="./image/igor1.jpg 1x,
+                               ./image/igor-2x.jpg 2x"
+                          media="(min-width: 1200px)">      
+              <source srcset="./image/igor-tab-1x.jpg 1x,
+                               ./image/igor-tab-2x.jpg 2x"
+                          media="(min-width: 768px)">  
+              <source srcset="./image/igor-tel-1x.jpg 1x,
+                               ./image/igor-tel-2x.jpg 2x"
+                          media="(min-width: 480px)">              
               <img
                 src="./image/igor1.jpg"
                 class="img-author"
                 alt="игорь"
                 width="270"
               />
+              </picture>
               <div class="author-text">
                 <h3 class="author-text__title">Игорь Демьяненко</h3>
                 <p class="profession">
@@ -267,12 +281,24 @@
               </div>
             </li>
             <li class="author__item">
-              <img
+              <picture>
+                <source srcset="./image/olga1.jpg 1x,
+                               ./image/olga-2x.jpg 2x"
+                          media="(min-width: 1200px)">      
+              <source srcset="./image/olga-tab-1x.jpg 1x,
+                               ./image/olga-tab-2x.jpg 2x"
+                          media="(min-width: 768px)">  
+              <source srcset="./image/olga-tel-1x.jpg 1x,
+                               ./image/olga-tel-2x.jpg 2x"
+                          media="(min-width: 480px)"> 
+                           <img
                 src="./image/olga1.jpg"
                 class="img-author"
                 alt="ольга"
                 width="270"
-              />
+              />     
+              </picture>
+             
               <div class="author-text">
                 <h3 class="author-text__title">Ольга Репина</h3>
                 <p class="profession">
@@ -311,12 +337,24 @@
               </div>
             </li>
             <li class="author__item">
+              <picture>
+                    <source srcset="./image/nicola1.jpg 1x,
+                               ./image/nicola-2x.jpg 2x"
+                          media="(min-width: 1200px)">      
+              <source srcset="./image/nicola-tab-1x.jpg 1x,
+                               ./image/nicola-tab-2x.jpg 2x"
+                          media="(min-width: 768px)">  
+              <source srcset="./image/nicola-tel-1x.jpg 1x,
+                               ./image/nicola-tel-2x.jpg 2x"
+                          media="(min-width: 480px)">
               <img
                 src="./image/nicola1.jpg"
                 class="img-author"
                 alt="николай"
                 width="270"
-              />
+              />             
+              </picture>
+              
               <div class="author-text">
                 <h3 class="author-text__title">Николай Тарасов</h3>
                 <p class="profession"><span lang="en">Marketing</span></p>
@@ -353,12 +391,23 @@
               </div>
             </li>
             <li class="author__item">
+              <picture>
+                      <source srcset="./image/michale1.jpg 1x,
+                               ./image/michal-2x.jpg 2x"
+                          media="(min-width: 1200px)">      
+              <source srcset="./image/michal-tab-1x.jpg 1x,
+                               ./image/michal-tab-2x.jpg 2x"
+                          media="(min-width: 768px)">  
+              <source srcset="./image/michal-tel-1x.jpg 1x,
+                               ./image/michal-tel-2x.jpg 2x"
+                          media="(min-width: 480px)">
               <img
                 src="./image/michale1.jpg"
                 class="img-author"
                 alt="михаил"
                 width="270"
               />
+              </picture>
               <div class="author-text">
                 <h3 class="author-text__title">Михаил Ермаков</h3>
                 <p class="profession"><span lang="en">UI Designer</span></p>
@@ -451,6 +500,7 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container footer__sectioun">
+        <div class="footer__tab">
         <div class="flex-footer">
           <a href="./index.html" class="logotype link logotype__footer"
             ><span class="logotype__accent">Web</span>Studio
@@ -503,6 +553,7 @@
               </a>
             </li>
           </ul>
+        </div>
         </div>
         <div class=" block-form footer__form">
           <form action="#">
