@@ -67,7 +67,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -189,7 +188,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 320px) {
   .flex-header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -210,7 +209,7 @@ body {
 }
 
 .mob-menu__open {
-  display: inline-block;
+  display: flex;
   position: absolute;
   right: 10px;
   top: 15px;
@@ -237,7 +236,6 @@ body {
 }
 
 .mobile {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -250,6 +248,7 @@ body {
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  overflow: scroll;
 }
 
 .mobile.is-hidden {
@@ -307,9 +306,16 @@ body {
 .mob-contact__tel {
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17647;
+  font-size: 24px;
+  line-height: 1.16667;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-contact__tel {
+    font-size: 34px;
+    line-height: 1.17647;
+  }
 }
 
 .mob-contact__tel:hover, .mob-contact__tel:focus {
@@ -333,7 +339,15 @@ body {
 
 .mob-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-social {
+    flex-wrap: nowrap;
+  }
 }
 
 .mob-social__item {
@@ -575,6 +589,8 @@ body {
   width: 450px;
   height: 404px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #eeeeee;
 }
 

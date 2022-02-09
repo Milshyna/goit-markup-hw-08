@@ -1,5 +1,5 @@
 .mob-menu__open {
-  display: inline-block;
+  display: flex;
   position: absolute;
   right: 10px;
   top: 15px;
@@ -21,7 +21,6 @@
   transform: (-50%, -50%);
 }
 .mobile {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,6 +33,7 @@
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  overflow: scroll;
   &.is-hidden {
     top: 100%;
   }
@@ -87,8 +87,12 @@
 .mob-contact__tel {
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: (40 / 34);
+  font-size: 24px;
+  line-height: (28 / 24);
+  @include tel {
+    font-size: 34px;
+    line-height: (40 / 34);
+  }
   letter-spacing: 0.02em;
   &:hover,
   &:focus {
@@ -110,7 +114,12 @@
 }
 .mob-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
+  text-decoration: none;
+  @include tel {
+    flex-wrap: nowrap;
+  }
 }
 
 .mob-social__item {
