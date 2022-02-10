@@ -18,7 +18,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../image/header-tab-1x.jpg);
-    width: 100%;
+    width: 100vw;
   }
   @media screen and(min-width: 1200px) {
     background-image: linear-gradient(
@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../image/hero.jpg);
-    width: 100%;
+    width: 100vw;
     height: 600px;
   }
 }

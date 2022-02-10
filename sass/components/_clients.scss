@@ -30,7 +30,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and(min-widht: 480px) {
+  @media screen and(min-widht: 480px) and(max-width: 767px) {
     flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and(min-widht: 768px) {

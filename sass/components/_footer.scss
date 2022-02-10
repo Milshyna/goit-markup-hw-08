@@ -3,8 +3,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
   @include desk {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   background: var(--darck-background);
 }
